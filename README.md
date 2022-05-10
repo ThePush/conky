@@ -6,7 +6,7 @@ First install:
 
 * tlp: a battery manager
 
-* mononoki nerd font: to get nice icons.
+* mononoki nerd font: to get nice icons
 
 Put the shell script in your ```/bin``` folder and add it to system startup applications.
 
