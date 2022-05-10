@@ -38,12 +38,7 @@ conky.config = {
 
 };
 conky.text = [[
-#${time %H:%M:%S}${alignr}${time %d-%m-%y}
-#${voffset -16}${font sans-serif:bold:size=18}${alignc}${time %H:%M}${font}
-#${voffset 4}${alignc}${time %A %B %d, %Y}
-#${font}${voffset -4}
 ${font sans-serif:bold:size=10}${color2}[SYSTEM] ${hr 2}${color}
-#${font sans-serif:normal:size=8}${color1}${execi 1000 grep model /proc/cpuinfo | cut -d : -f2 | tail -1 | sed 's/\s//'}
 ${font sans-serif:normal:size=8}${color1}${font mononoki Nerd Font :size=13}${font sans-serif:normal:size=8}${offset 6}${execi 10000 lsb_release -a | grep 'Description' | awk '{for (f=2; f<=NF; ++f) { if (f!=2) {printf("%s",OFS);} printf("%s",$f)}; printf "\n" }'} ${color}$alignr $kernel $machine ${execi 108000 mate --version}
 ${color1}${font mononoki Nerd Font :size=13}${font sans-serif:normal:size=8}${offset 7}Uptime:${color}$alignr$uptime
 
