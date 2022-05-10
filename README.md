@@ -1,4 +1,4 @@
-# My conky configuration
+# The conky configuration for my Thinkpad T470p i7 7820hq
 
 First install:
 
