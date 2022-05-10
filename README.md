@@ -1,5 +1,7 @@
 # The conky configuration for my Thinkpad T470p i7 7820hq
 
+Tailored for a 14 inches screen.
+
 First install:
 
 * tlp: a battery manager
