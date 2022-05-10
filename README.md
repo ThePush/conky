@@ -1,6 +1,6 @@
-# The conky configuration for my Thinkpad T470p i7 7820hq
+# My conky configuration
 
-Tailored for a 14 inches screen.
+Tailored for a Thinkpad T470p i7 7820hq with a 14 inches screen.
 
 First install:
 
