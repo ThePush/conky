@@ -10,6 +10,6 @@ First install:
 
 Put the shell script in your ```/bin``` folder and add it to system startup applications.
 
-Create a ```.conky``` directory in your home folder and put the conky_rc files in it.
+Create a ```.conky``` directory in your home folder and put the ```config``` directory files of this repository in it.
 
 ![](https://user-images.githubusercontent.com/91064070/167584797-51884c9a-3216-40dc-9e57-10f32bfed5d3.png)
