@@ -42,7 +42,7 @@ ${font sans-serif:normal:size=8}${color1}Local IPs:${alignr}External IP:${color}
 ${execi 1000 ip a | grep inet | grep -vw lo | grep -v inet6 | cut -d \/ -f1 | sed 's/[^0-9\.]*//g'}  ${alignr}${execi 1000  wget -q -O- http://ipecho.net/plain; echo}
 ${color2}${font sans-serif:normal:size=8}▼${color} ${downspeed wlan0}  ${alignr}${upspeed wlan0}${color2} ▲${color} 
 ${downspeedgraph wlan0 80,155 104E8B 0077ff -t} ${alignr}${upspeedgraph wlan0 80,155 104E8B 0077ff -t}$color
-${font mononoki Nerd Font :size=9}${color2}${offset 6}${color1}${font sans-serif:normal:size=8}Inbound Connections [${tcp_portmon 1 32767 count}]${alignr} Local Service/Port${offset 4}${font mononoki Nerd Font :size=11}${color2}ﮣ${font sans-serif:normal:size=8}$color${offset 6}
+${font mononoki Nerd Font :size=9}${color2}${offset 6}${color1}${font sans-serif:normal:size=8}Inbound Connections [${tcp_portmon 1 32767 count}]${alignr} Local Service/Port${offset 4}${font mononoki Nerd Font :size=9}${color2} ${font sans-serif:normal:size=8}$color${offset 6}
  ${tcp_portmon 1 32767 rhost 0} ${alignr} ${tcp_portmon 1 32767 lservice 0}
  ${tcp_portmon 1 32767 rhost 1} ${alignr} ${tcp_portmon 1 32767 lservice 1}
  ${tcp_portmon 1 32767 rhost 2} ${alignr} ${tcp_portmon 1 32767 lservice 2}
@@ -64,7 +64,7 @@ ${font mononoki Nerd Font :size=9}${color2}${offset 6}${color1}${font sans-se
  ${tcp_portmon 1 32767 rhost 18} ${alignr} ${tcp_portmon 1 32767 lservice 18}
  ${tcp_portmon 1 32767 rhost 19} ${alignr} ${tcp_portmon 1 32767 lservice 19}
  ${tcp_portmon 1 32767 rhost 20} ${alignr} ${tcp_portmon 1 32767 lservice 20}
-${font mononoki Nerd Font :size=9}${color2}${offset 6}${color1}${font sans-serif:normal:size=8}Outbound Connections [${tcp_portmon 32768 61000 count}]${alignr} Remote Service/Port${offset 4}${font mononoki Nerd Font :size=11}${color2}ﮣ${font sans-serif:normal:size=8}$color
+${font mononoki Nerd Font :size=9}${color2}${offset 6}${color1}${font sans-serif:normal:size=8}Outbound Connections [${tcp_portmon 32768 61000 count}]${alignr} Remote Service/Port${offset 4}${font mononoki Nerd Font :size=9}${color2} ${font sans-serif:normal:size=8}$color
  ${tcp_portmon 32768 61000 rhost 0} ${alignr} ${tcp_portmon 32768 61000 rservice 0}
  ${tcp_portmon 32768 61000 rhost 1} ${alignr} ${tcp_portmon 32768 61000 rservice 1}
  ${tcp_portmon 32768 61000 rhost 2} ${alignr} ${tcp_portmon 32768 61000 rservice 2}
@@ -86,8 +86,8 @@ ${font mononoki Nerd Font :size=9}${color2}${offset 6}${color1}${font sans-se
  ${tcp_portmon 32768 61000 rhost 18} ${alignr} ${tcp_portmon 32768 61000 rservice 18}
  ${tcp_portmon 32768 61000 rhost 19} ${alignr} ${tcp_portmon 32768 61000 rservice 19}
  ${tcp_portmon 32768 61000 rhost 20} ${alignr} ${tcp_portmon 32768 61000 rservice 20}
-${if_updatenr 01}${image ~/.conky/dk.png -p 130,235 -s 160x160 -f 86400}${endif}
-${if_updatenr 02}${image ~/.conky/dk.png -p 130,235 -s 160x160 -f 86400}${endif}
-${if_updatenr 03}${image ~/.conky/dk.png -p 130,235 -s 160x160 -f 86400}${endif}
-${if_updatenr 04}${image ~/.conky/dk2.png -p 130,235 -s 160x160 -f 86400}${endif}
+${if_updatenr 01}${image ~/.conky/assets/dk.png -p 130,235 -s 160x160 -f 86400}${endif}
+${if_updatenr 02}${image ~/.conky/assets/dk.png -p 130,235 -s 160x160 -f 86400}${endif}
+${if_updatenr 03}${image ~/.conky/assets/dk.png -p 130,235 -s 160x160 -f 86400}${endif}
+${if_updatenr 04}${image ~/.conky/assets/dk2.png -p 130,235 -s 160x160 -f 86400}${endif}
 ]];
