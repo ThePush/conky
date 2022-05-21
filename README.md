@@ -2,7 +2,7 @@
 
 Tailored for:
 - Thinkpad T470p quad-core i7 7820hq with a 14 inches screen.
-- Thinkpad x230 duql-core i5 3320m with a 12.5 inches screen.
+- Thinkpad x230 dual-core i5 3320m with a 12.5 inches screen.
 
 First install:
 
