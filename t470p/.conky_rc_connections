@@ -86,8 +86,8 @@ ${font mononoki Nerd Font :size=9}${color2}${font sans-serif:normal:size=8}${
  ${tcp_portmon 32768 61000 rhost 18} ${alignr} ${tcp_portmon 32768 61000 rservice 18}
  ${tcp_portmon 32768 61000 rhost 19} ${alignr} ${tcp_portmon 32768 61000 rservice 19}
  ${tcp_portmon 32768 61000 rhost 20} ${alignr} ${tcp_portmon 32768 61000 rservice 20}
-${if_updatenr 01}${image ~/.conky/dk.png -p 150,290 -s 160x160 -f 86400}${endif}
-${if_updatenr 02}${image ~/.conky/dk.png -p 150,290 -s 160x160 -f 86400}${endif}
-${if_updatenr 03}${image ~/.conky/dk.png -p 150,290 -s 160x160 -f 86400}${endif}
-${if_updatenr 04}${image ~/.conky/dk2.png -p 150,290 -s 160x160 -f 86400}${endif}
+${if_updatenr 01}${image ~/.conky/assets/dk.png -p 150,290 -s 160x160 -f 86400}${endif}
+${if_updatenr 02}${image ~/.conky/assets/dk.png -p 150,290 -s 160x160 -f 86400}${endif}
+${if_updatenr 03}${image ~/.conky/assets/dk.png -p 150,290 -s 160x160 -f 86400}${endif}
+${if_updatenr 04}${image ~/.conky/assets/dk2.png -p 150,290 -s 160x160 -f 86400}${endif}
 ]];
